@@ -3,12 +3,12 @@
 root_dir=$(pwd)
 echo "Setting up the environment in the $root_dir"
 
-# --------------------------------------------------------------
-#          create and activate the virtual environment
-# --------------------------------------------------------------
-echo "Creating a virtual environment with python3"
-conda create -n itv2_hf python=3.9 -y
-conda activate itv2_hf
+# # --------------------------------------------------------------
+# #          create and activate the virtual environment
+# # --------------------------------------------------------------
+# echo "Creating a virtual environment with python3"
+# conda create -n itv2_hf python=3.9 -y
+# conda activate itv2_hf
 
 echo "Installing all the dependencies"
 conda install pip
@@ -18,7 +18,7 @@ python3 -m pip install --upgrade pip
 # --------------------------------------------------------------
 #                   PyTorch Installation
 # --------------------------------------------------------------
-python3 -m pip install torch --extra-index-url https://download.pytorch.org/whl/cu118
+# python3 -m pip install torch --extra-index-url https://download.pytorch.org/whl/cu118
 
 
 # --------------------------------------------------------------
